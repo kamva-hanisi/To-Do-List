@@ -1,18 +1,28 @@
 import React, { useState } from "react"
 
-export const ToDoList = () => {
-    const [todos, setTodos] = useState([])
-    const [newTask, setTask] = useState("");
+function ToDoList() {
+    const [tasks, setTasks] = useState([])
+    const [input, setInput] = useState("")
 
-    const handleChange = (event) => {
-        
+    function handleInputChange(event) {
     }
 
-    const addTask = () => {
-        setTodos([...todos, newTask])
-        setTask("")
+    function addTask() {
     }
-  return (
-    <div>ToDoList</div>
-  )
+
+    function removeTask(index) {
+    }
+
+    function moveTaskUp(index) {
+    }
+
+    function moveTaskDown(index) {
+    }
+
+    return(
+        <div className="To-Do-List">
+            <h1>To-Do-List</h1>
+        </div>
+    )
 }
+export default ToDoList
