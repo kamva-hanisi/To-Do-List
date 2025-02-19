@@ -1,27 +1,41 @@
 import React, { useState } from "react"
 
 function ToDoList() {
-    const [tasks, setTasks] = useState([])
-    const [input, setInput] = useState("")
+    const [Place, setPlace] = useState([])
+    const [newTube, setTube] = useState("")
 
     function handleInputChange(event) {
+        setTube(event.target.value)
     }
 
-    function addTask() {
+    function addPlace() {
+
     }
 
-    function removeTask(index) {
+    function removePlace(index) {
+
     }
 
-    function moveTaskUp(index) {
+    function movePlaceUp(index) {
+
     }
 
-    function moveTaskDown(index) {
+    function movePlaceDown(index) {
+
     }
 
     return(
         <div className="To-Do-List">
             <h1>To-Do-List</h1>
+            <div className="input-container">
+                <input
+                    type="text"
+                    placeholder="Enter a new place..."
+                    value={newTube}
+                    onChange={handleInputChange}
+                />
+                <button onClick={addPlace}>Add Place</button>
+            </div>
         </div>
     )
 }
